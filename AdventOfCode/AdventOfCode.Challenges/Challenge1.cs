@@ -8,12 +8,7 @@ namespace AdventOfCode.Challenges
 {
     public class Challenge1
     {
-       
-        public Challenge1()
-        {
-
-        }
-
+      
         public void Run()
         {
             string[] calories = File.ReadAllLines("Inputs/challenge1.txt");
@@ -30,13 +25,18 @@ namespace AdventOfCode.Challenges
                 {
                     ElvesAndCalories.Add(elf, current);
                     elf++;
-                    current = 0; 
+                    current = 0;
                 }
             }
 
-            var fatso = ElvesAndCalories.OrderBy(x => x.Value).Last();
-            Console.WriteLine($"Elf carrying the most calories is elf number { fatso.Key } carrying { fatso.Value }");
+            var hardestWorkingElf = ElvesAndCalories.OrderBy(x => x.Value).Last();
+            Console.WriteLine($"Elf carrying the most calories is elf number { hardestWorkingElf.Key } carrying { hardestWorkingElf.Value }");
 
+            // Calculate part 2, we can order by descending (to make it easier) then select the top3 with a take
+            var hardestWorkingElves = ElvesAndCalories.OrderByDescending(x => x.Value).Take(3);
+            // Then we just calculate the total 
+            var amountOfCalories = hardestWorkingElves.Sum(x => x.Value);
+            Console.WriteLine($"The three hardest working elves are carrying { amountOfCalories } calories");
         }
 
         // Don't use this its mean
