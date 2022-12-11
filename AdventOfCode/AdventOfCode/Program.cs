@@ -6,7 +6,7 @@ namespace AdventOfCode.Console
     {
         static void Main(string[] args)
         {
-            new Challenge2().Run("Inputs/challenge2.txt");
+            new Challenge3().Run("Inputs/challenge3.txt");
         }
     }
 }

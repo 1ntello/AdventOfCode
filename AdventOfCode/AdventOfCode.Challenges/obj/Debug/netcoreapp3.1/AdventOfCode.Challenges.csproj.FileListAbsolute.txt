@@ -9,3 +9,4 @@ C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenge
 C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\obj\Debug\netcoreapp3.1\AdventOfCode.Challenges.pdb
 C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\bin\Debug\netcoreapp3.1\Inputs\challenge1.txt
 C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\bin\Debug\netcoreapp3.1\Inputs\challenge2.txt
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\bin\Debug\netcoreapp3.1\Inputs\challenge3.txt
