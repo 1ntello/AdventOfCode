@@ -12,6 +12,13 @@ namespace AdventOfCode.Challenges
         Scissors = 3
     }
 
+    public enum Outcome 
+    {
+        Loss,
+        Win,
+        Draw
+    }
+
     public class Challenge2
     {
         public void Run(string path)
@@ -23,36 +30,51 @@ namespace AdventOfCode.Challenges
             foreach (var s in strategies)
             {
                 string[] moves = s.Split(" ");
-                Console.WriteLine($"Calculating points for { moves[0] } which is  { StringToOptions(moves[0].ToString()) } and {moves[1] } which is {  StringToOptions(moves[1]).ToString() }");
-                totalPoints += CalculatePoints(StringToOptions(moves[0]), StringToOptions(moves[1]));
+
+                var playerShape = GetBestOption(StringToOptions(moves[0]), StringToOutcome(moves[1]));
+                totalPoints += CalculatePoints(playerShape, StringToOptions(moves[0]));
             }
             Console.WriteLine($"Amount of points: { totalPoints }");
         }
-
         private Options StringToOptions(string s) {
-            if (s == "A" || s == "X") return Options.Rock;
-            else if (s == "B" || s == "Y") return Options.Paper;
-            else if (s == "C" || s == "Z") return Options.Scissors;
+            if (s == "A") return Options.Rock;
+            else if (s == "B") return Options.Paper;
+            else if (s == "C" ) return Options.Scissors;
             else throw new Exception("No valid option stop cheating nerd");
         }
-        private int CalculatePoints(Options option2, Options option1)
+        private Outcome StringToOutcome(string s)
+        {
+            if (s == "X") return Outcome.Loss;
+            else if (s == "Y") return Outcome.Draw;
+            else if (s == "Z") return Outcome.Win;
+            else throw new Exception("No valid option stop cheating nerd");
+        }
+
+
+        private int CalculatePoints(Options option1, Options option2)
         {
             // We only need to know when the player wins 
             if ((option1 == Options.Paper && option2 == Options.Rock) || (option1 == Options.Rock && option2 == Options.Scissors) || (option1 == Options.Scissors && option2 == Options.Paper))
-            {
-                Console.WriteLine($"{option1.ToString()} vs {option2.ToString()} gives { 6 + (int)option1 }");
                 return 6 + (int)option1;
-            }
             if (option1 == option2)
-            {
-                Console.WriteLine($"{option1.ToString()} vs {option2.ToString()} gives draw");
                 return 3 + (int)option1;
-            }
             else
-            {
-                Console.WriteLine($"{option1.ToString()} vs {option2.ToString()} gives loss");
                 return (int)option1;
-            }
+        }
+
+        private Options GetBestOption(Options option1, Outcome outcome) 
+        {
+            if (outcome == Outcome.Draw) return option1;
+
+            else if (outcome == Outcome.Win && option1 == Options.Rock) return Options.Paper;
+            else if (outcome == Outcome.Win && option1 == Options.Paper) return Options.Scissors;
+            else if (outcome == Outcome.Win && option1 == Options.Scissors) return Options.Rock;
+
+            else if (outcome == Outcome.Loss && option1 == Options.Rock) return Options.Scissors;
+            else if (outcome == Outcome.Loss && option1 == Options.Scissors) return Options.Paper;
+            else if (outcome == Outcome.Loss && option1 == Options.Paper) return Options.Rock;
+
+            throw new Exception("Invalid setup");
         }
     }
 }
