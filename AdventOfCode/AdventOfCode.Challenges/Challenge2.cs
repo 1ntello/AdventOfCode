@@ -36,12 +36,14 @@ namespace AdventOfCode.Challenges
             }
             Console.WriteLine($"Amount of points: { totalPoints }");
         }
+
         private Options StringToOptions(string s) {
             if (s == "A") return Options.Rock;
             else if (s == "B") return Options.Paper;
             else if (s == "C" ) return Options.Scissors;
             else throw new Exception("No valid option stop cheating nerd");
         }
+
         private Outcome StringToOutcome(string s)
         {
             if (s == "X") return Outcome.Loss;
@@ -49,7 +51,6 @@ namespace AdventOfCode.Challenges
             else if (s == "Z") return Outcome.Win;
             else throw new Exception("No valid option stop cheating nerd");
         }
-
 
         private int CalculatePoints(Options option1, Options option2)
         {

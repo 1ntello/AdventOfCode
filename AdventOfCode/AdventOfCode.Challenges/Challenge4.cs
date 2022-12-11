@@ -40,7 +40,6 @@ namespace AdventOfCode.Challenges
 
             }
 
-
             Console.WriteLine($"Amount of pairs { counter } ");
         }
     }
