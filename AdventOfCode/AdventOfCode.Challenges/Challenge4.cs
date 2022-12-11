@@ -17,7 +17,7 @@ namespace AdventOfCode.Challenges
             foreach (var sp in p)
             {
                 if (sp == String.Empty)
-                    continue; 
+                    continue;
 
                 var elves = sp.Split(",").ToList();
 
@@ -26,13 +26,21 @@ namespace AdventOfCode.Challenges
                 int lastElfMinimal = Int32.Parse(elves[1].Split("-")[0]);
                 int lastElfMaximal = Int32.Parse(elves[1].Split("-")[1]);
 
-                if ((firstElfMaximal <= lastElfMaximal && firstElfMinimal >= lastElfMinimal) 
-                    || lastElfMaximal <= firstElfMaximal && lastElfMinimal >= firstElfMinimal)
+                if (firstElfMinimal > lastElfMaximal 
+                    || lastElfMinimal > firstElfMaximal 
+                    || firstElfMaximal < lastElfMinimal 
+                    || lastElfMaximal < firstElfMinimal)
+                {
+                    continue;
+                }
+                else
+                {
                     counter++;
+                }
 
             }
 
-         
+
             Console.WriteLine($"Amount of pairs { counter } ");
         }
     }
