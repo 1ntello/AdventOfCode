@@ -1,0 +1,10 @@
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\bin\Debug\netcoreapp3.1\AdventOfCode.Challenges.deps.json
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\bin\Debug\netcoreapp3.1\AdventOfCode.Challenges.dll
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\bin\Debug\netcoreapp3.1\AdventOfCode.Challenges.pdb
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\obj\Debug\netcoreapp3.1\AdventOfCode.Challenges.csprojAssemblyReference.cache
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\obj\Debug\netcoreapp3.1\AdventOfCode.Challenges.AssemblyInfoInputs.cache
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\obj\Debug\netcoreapp3.1\AdventOfCode.Challenges.AssemblyInfo.cs
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\obj\Debug\netcoreapp3.1\AdventOfCode.Challenges.csproj.CoreCompileInputs.cache
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\obj\Debug\netcoreapp3.1\AdventOfCode.Challenges.dll
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\obj\Debug\netcoreapp3.1\AdventOfCode.Challenges.pdb
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode.Challenges\bin\Debug\netcoreapp3.1\Inputs\challenge1.txt

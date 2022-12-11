@@ -1,0 +1,17 @@
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.Console.exe
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.Console.deps.json
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.Console.runtimeconfig.json
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.Console.runtimeconfig.dev.json
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.Console.dll
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.Console.pdb
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.Challenges.dll
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.Challenges.pdb
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.Console.csprojAssemblyReference.cache
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.Console.AssemblyInfoInputs.cache
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.Console.AssemblyInfo.cs
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.Console.csproj.CoreCompileInputs.cache
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.Console.csproj.CopyComplete
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.Console.dll
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.Console.pdb
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.Console.genruntimeconfig.cache
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\Inputs\challenge1.txt
