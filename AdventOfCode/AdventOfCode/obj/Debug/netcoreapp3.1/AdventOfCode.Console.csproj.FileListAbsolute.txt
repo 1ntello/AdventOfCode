@@ -19,3 +19,4 @@ C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug
 C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\Inputs\challenge3.txt
 C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\Inputs\challenge4.txt
 C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\Inputs\challenge5.txt
+C:\Users\henki\Documents\GitHub\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\Inputs\challenge6.txt
