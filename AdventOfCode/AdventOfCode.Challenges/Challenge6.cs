@@ -19,9 +19,9 @@ namespace AdventOfCode.Challenges
                 counter++;
                 last4values.Enqueue(c);
                 //This will go off once we start counting
-                if (last4values.Count == 4)
+                if (last4values.Count == 14)
                 {
-                    if (last4values.Distinct().Count() == 4)
+                    if (last4values.Distinct().Count() == 14)
                         Console.WriteLine($"4 different characters found, so it started at  { counter  }");
                     else
                     {
