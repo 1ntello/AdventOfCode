@@ -41,12 +41,15 @@ namespace AdventOfCode.Challenges
                 int origStack = Int32.Parse(instructions[3]);
                 int destStack = Int32.Parse(instructions[5]);
 
+                // Challenge Part two changes we can just make here. 
+                char[] valuesToMove = new char[amountToMove];
+
                 for (int j = 0; j < amountToMove; j++)
-                {
-                    var valueToBeMoved = Stacks.Where(x => x.Key == origStack).Single().Value.Pop();
-                    
-                    Stacks.Where(x => x.Key == destStack).Single().Value.Push(valueToBeMoved);
-                }
+                    valuesToMove[j] = Stacks.Where(x => x.Key == origStack).Single().Value.Pop();
+
+                // Now we reverse through the list and push
+                for (int x = amountToMove - 1; x >= 0; x--)
+                    Stacks.Where(x => x.Key == destStack).Single().Value.Push(valuesToMove[x]);
 
             }
         }
