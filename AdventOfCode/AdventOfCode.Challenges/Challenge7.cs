@@ -107,6 +107,18 @@ namespace AdventOfCode.Challenges
             var totalSum = _masterData.Where(x => x.Value <= 100000).ToList().Sum(x => x.Value);
             Console.WriteLine($"Total sum is {totalSum}");
 
+
+            //PART 2
+            const int totalSize = 70000000;
+            const int requiredSize = 30000000;
+
+            int usedSize = _masterData.Where(x => x.Key.Name == "/").Single().Value;
+            int missingSize = requiredSize - (totalSize - usedSize);
+
+            var possibleDirs = _masterData.Where(x => x.Value >= missingSize).ToList();
+            var smallest = possibleDirs.OrderByDescending(x => x.Value).Last();
+            Console.WriteLine($"Smallest dir available = {smallest.Value} and dir is {smallest.Key.Name}");
+
         }
 
         private int FillDictionary(AdventObject dir, List<AdventObject> all)
